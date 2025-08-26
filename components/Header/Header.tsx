@@ -10,7 +10,7 @@ const Header = () => {
           width={50}
           height={50}
         />
-        <h2 className="font-bold text-xl">Rhythmix</h2>
+        <h2 className="font-light text-xl">Rhythmix</h2>
       </div>
 
       <div>
