@@ -1,6 +1,7 @@
 import Features from "@/components/Feature/Feature";
 import Hero from "@/components/Hero/Hero";
 import ScrollVelocity from "@/components/Reactbits/ScrollVelocity";
+import ReviewMarquee from "@/components/ReviewMarquee/ReviewMarquee";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         className="custom-scroll-text text-slate-500"
       />
       <Features />
+      <ReviewMarquee />
     </div>
   );
 }
