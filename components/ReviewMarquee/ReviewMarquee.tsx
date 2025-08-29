@@ -70,15 +70,17 @@ const ReviewMarquee = () => {
 
   return (
     <div className="bg-slate-50/90 text-slate-700 py-6">
-      <Marquee pauseOnHover speed={35} gradient={false}>
+      <Marquee pauseOnHover speed={15} gradient={false}>
         {reviews.map((review, i) => (
           <div
             key={i}
-            className="mx-6 p-6 min-w-[320px] max-w-md rounded-2xl shadow-md bg-white flex flex-col justify-between"
+            className="mx-6 p-6 min-w-[320px] min-h-[200px] max-w-md rounded-2xl shadow-md bg-white flex flex-col justify-between"
           >
-            {renderStars(review.star)}
             <p className="my-2 text-sm leading-snug">“{review.review}”</p>
-            <p className="italic text-xs text-right">— {review.name}</p>
+            <div className="flex justify-between items-center">
+              <p className="italic text-xs text-right">— {review.name}</p>
+              {renderStars(review.star)}
+            </div>
           </div>
         ))}
       </Marquee>
