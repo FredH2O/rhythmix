@@ -22,35 +22,32 @@ const Features = () => {
           Welcome to Rhythmix — your #1 choice for professional DJs, delivering
           tailored parties and unforgettable entertainment for weddings,
           corporate events, birthdays, and more. We bring the perfect mix of
-          energy, expertise, and passion to make sure your celebration feels
-          unique, personal, and truly unforgettable.
+          energy and expertise to make your celebration truly unforgettable.
         </p>
 
         <p className="mb-4">
-          Every event has its own heartbeat, its own story waiting to be told
-          through music. That’s why we don’t just press play — we craft
-          soundtracks that reflect your vision, your guests, and your
-          atmosphere. From elegant evenings to lively dance floors, our DJs know
-          how to read the crowd, lift the energy, and keep the rhythm flowing
-          from the very first beat to the last song of the night.
+          Every event has its own heartbeat, its own story told through music.
+          That’s why we don’t just press play — we craft soundtracks that
+          reflect your vision, your guests, and your atmosphere. From elegant
+          evenings to lively dance floors, our DJs keep the rhythm flowing from
+          the first beat to the final song.
         </p>
 
         <p className="mb-4">
           With years of experience across weddings, parties, and corporate
           events, our team blends professionalism with creativity. We handle the
-          details so you can focus on the moment — confident that every
-          transition, every track, and every announcement will be delivered
-          seamlessly. Whether you want timeless classics, modern hits, or a mix
-          of both, we’ll design a setlist that feels as personal as the occasion
-          itself.
+          details so you can enjoy the moment — confident that every transition,
+          track, and announcement will be delivered seamlessly. Whether you want
+          timeless classics or modern hits, we’ll create a setlist as personal
+          as your occasion.
         </p>
 
-        <p className="">
+        <p>
           At Rhythmix, we believe music should do more than fill a room — it
           should create memories that last. From the first dance to the last
-          encore, we’ll make sure your event is one to remember. Let’s bring
-          your celebration to life with sound, style, and the kind of atmosphere
-          people will talk about long after the night is over.
+          encore, we’ll make sure your event is one to remember. Together, let’s
+          bring your celebration to life with sound, style, and atmosphere that
+          guests will talk about long after the night is over.
         </p>
       </div>
     </section>
