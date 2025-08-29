@@ -5,7 +5,7 @@ const quote = [
     id: "1",
     title: "Custom Music Playlists",
     description:
-      "Since the time of our inception in DJing, our quest has been to raise the bar of excellence in the DJ and entertainment services in Dublin by providing our clients with amazing DJ entertainment every time at the most reasonable rates. We listen to our clients to understand the event and the purpose of throwing a party. This helps us plan exactly to make the celebration a memorable one. Our topnotch quality service, DJ hire plan, outstanding event lighting service, and reasonable rates have made us one of the leading DJ entertainment suppliers in Dublin.",
+      "Every event deserves its own unique rhythm. With our custom DJ playlists, we tailor music to your taste and the atmosphere you want to create — whether it’s smooth and relaxed or high-energy party vibes. Your celebration gets a soundtrack designed just for you.",
     button: "Get DJ Quote",
     image: "/images/dj-mix-set.jpg",
     alt: "Our DJ's finest kit.",
@@ -14,7 +14,7 @@ const quote = [
     id: "2",
     title: "Complete DJ Hire Dublin, Ireland",
     description:
-      "Since the time of our inception in DJing, our quest has been to raise the bar of excellence in the DJ and entertainment services in Dublin by providing our clients with amazing DJ entertainment every time at the most reasonable rates. We listen to our clients to understand the event and the purpose of throwing a party. This helps us plan exactly to make the celebration a memorable one. Our topnotch quality service, DJ hire plan, outstanding event lighting service, and reasonable rates have made us one of the leading DJ entertainment suppliers in Dublin.",
+      "From weddings to corporate parties, our complete DJ hire service in Dublin covers everything — professional sound, dynamic lighting, and experienced DJs who know how to read the crowd. We bring the beats, the energy, and the expertise to keep the dancefloor alive.",
     button: "Get DJ Quote",
     image: "/images/dj-sebastian.jpg",
     alt: `DJ Sebastian going crazy at DJ Icon ${new Date().getFullYear()}`,
@@ -25,20 +25,23 @@ const Quote = () => {
   return (
     <section className="container mx-auto py-10 space-y-10">
       <div className="flex flex-col space-y-10 justify-center items-center p-3">
-        {quote.map((index) => (
-          <div className="flex" key={index.id}>
-            <div className="w-1/2 space-y-3 px-10">
-              <h3 className="text-3xl font-bold">{index.title}</h3>
-              <p>{index.description}</p>
-              <button className="border hover:bg-cyan-500 cursor-pointer hover:text-slate-800 px-4 py-2 rounded-full text-sm">
-                {index.button}
+        {quote.map((item) => (
+          <div
+            className="flex flex-col lg:gap-0 gap-10 justify-center lg:flex-row items-center"
+            key={item.id}
+          >
+            <div className="lg:w-1/2 space-y-3 lg:px-10 px-5">
+              <h3 className="text-3xl font-bold">{item.title}</h3>
+              <p>{item.description}</p>
+              <button className="border transition-all duration-300 hover:bg-cyan-500 cursor-pointer hover:text-slate-800 px-4 py-2 rounded-full text-sm">
+                {item.button}
               </button>
             </div>
-            <div className="w-1/2">
+            <div className="lg:w-1/2">
               <Image
-                className="overflow-hidden rounded-2xl"
-                src={index.image}
-                alt={index.alt}
+                className="overflow-hidden h-[500px] object-cover rounded-2xl"
+                src={item.image}
+                alt={item.alt}
                 width={1000}
                 height={1000}
                 priority
