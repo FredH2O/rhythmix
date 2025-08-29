@@ -1,5 +1,6 @@
 import Features from "@/components/Feature/Feature";
 import Hero from "@/components/Hero/Hero";
+import Quote from "@/components/Quote/Quote";
 import ScrollVelocity from "@/components/Reactbits/ScrollVelocity";
 import ReviewMarquee from "@/components/ReviewMarquee/ReviewMarquee";
 
@@ -17,6 +18,7 @@ export default function Home() {
       />
       <Features />
       <ReviewMarquee />
+      <Quote />
     </div>
   );
 }
